@@ -13,6 +13,12 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead, tfoot {
+            background-color: rgb(38, 38, 38);
+            color: white;
         }
 
         td, th {
@@ -20,20 +26,43 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(38, 38, 38);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(38, 38, 38);
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
             text-align: right;
         }
+
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES 
         TABLE
+        CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -42,15 +71,16 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">210.147.125</td>
             </tr>
         </tfoot>
@@ -166,5 +196,16 @@
         </tbody>
         
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequatur. Dolore architecto voluptates placeat maiores nisi autem accusantium repudiandae aut, dolor repellendus iusto quaerat necessitatibus laudantium quas quibusdam doloremque in? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corporis cumque, ullam laudantium provident quisquam, voluptatibus necessitatibus hic dolore omnis esse quibusdam iusto doloremque dolorum, quo quia saepe iste suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur harum error perferendis, accusamus perspiciatis pariatur asperiores enim maiores laboriosam adipisci assumenda ipsam, libero vel quo cum ex. Nam, nulla? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem deserunt temporibus voluptate! At fuga non labore eum, ipsam molestiae velit molestias sequi voluptates laudantium enim illo, voluptate distinctio consequuntur mollitia.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequatur. Dolore architecto voluptates placeat maiores nisi autem accusantium repudiandae aut, dolor repellendus iusto quaerat necessitatibus laudantium quas quibusdam doloremque in? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corporis cumque, ullam laudantium provident quisquam, voluptatibus necessitatibus hic dolore omnis esse quibusdam iusto doloremque dolorum, quo quia saepe iste suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur harum error perferendis, accusamus perspiciatis pariatur asperiores enim maiores laboriosam adipisci assumenda ipsam, libero vel quo cum ex. Nam, nulla? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem deserunt temporibus voluptate! At fuga non labore eum, ipsam molestiae velit molestias sequi voluptates laudantium enim illo, voluptate distinctio consequuntur mollitia.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequatur. Dolore architecto voluptates placeat maiores nisi autem accusantium repudiandae aut, dolor repellendus iusto quaerat necessitatibus laudantium quas quibusdam doloremque in? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corporis cumque, ullam laudantium provident quisquam, voluptatibus necessitatibus hic dolore omnis esse quibusdam iusto doloremque dolorum, quo quia saepe iste suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur harum error perferendis, accusamus perspiciatis pariatur asperiores enim maiores laboriosam adipisci assumenda ipsam, libero vel quo cum ex. Nam, nulla? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem deserunt temporibus voluptate! At fuga non labore eum, ipsam molestiae velit molestias sequi voluptates laudantium enim illo, voluptate distinctio consequuntur mollitia.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequatur. Dolore architecto voluptates placeat maiores nisi autem accusantium repudiandae aut, dolor repellendus iusto quaerat necessitatibus laudantium quas quibusdam doloremque in? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corporis cumque, ullam laudantium provident quisquam, voluptatibus necessitatibus hic dolore omnis esse quibusdam iusto doloremque dolorum, quo quia saepe iste suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur harum error perferendis, accusamus perspiciatis pariatur asperiores enim maiores laboriosam adipisci assumenda ipsam, libero vel quo cum ex. Nam, nulla? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem deserunt temporibus voluptate! At fuga non labore eum, ipsam molestiae velit molestias sequi voluptates laudantium enim illo, voluptate distinctio consequuntur mollitia.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequatur. Dolore architecto voluptates placeat maiores nisi autem accusantium repudiandae aut, dolor repellendus iusto quaerat necessitatibus laudantium quas quibusdam doloremque in? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corporis cumque, ullam laudantium provident quisquam, voluptatibus necessitatibus hic dolore omnis esse quibusdam iusto doloremque dolorum, quo quia saepe iste suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur harum error perferendis, accusamus perspiciatis pariatur asperiores enim maiores laboriosam adipisci assumenda ipsam, libero vel quo cum ex. Nam, nulla? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem deserunt temporibus voluptate! At fuga non labore eum, ipsam molestiae velit molestias sequi voluptates laudantium enim illo, voluptate distinctio consequuntur mollitia.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequatur. Dolore architecto voluptates placeat maiores nisi autem accusantium repudiandae aut, dolor repellendus iusto quaerat necessitatibus laudantium quas quibusdam doloremque in? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corporis cumque, ullam laudantium provident quisquam, voluptatibus necessitatibus hic dolore omnis esse quibusdam iusto doloremque dolorum, quo quia saepe iste suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur harum error perferendis, accusamus perspiciatis pariatur asperiores enim maiores laboriosam adipisci assumenda ipsam, libero vel quo cum ex. Nam, nulla? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem deserunt temporibus voluptate! At fuga non labore eum, ipsam molestiae velit molestias sequi voluptates laudantium enim illo, voluptate distinctio consequuntur mollitia.</p>
 </body>
 </html>
