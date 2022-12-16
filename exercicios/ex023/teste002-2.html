@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
             width: 500px;
             border-collapse: collapse;
         }
-
+        
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -26,7 +26,7 @@
             font-size: 1.5em;
             font-weight: bold;
         }
-        
+
         thead > tr > th {
             position: sticky;
             background-color: #383838;
@@ -49,14 +49,14 @@
         td.num {
             text-align: right;
         }
-        
-        
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
-        <caption>População das Unidades Federativas</caption>
+        <caption>
+            <p>População das Unidades Federativas</p>
+        </caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
@@ -174,8 +174,10 @@
             </tr>
         </tbody>
         <tfoot>
-            <th scope="row">Total de Habitantes</th>
-            <td><strong>217.529.028</strong></td>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>217.529.028</td>
+            </tr>
         </tfoot>
     </table>
 </body>
