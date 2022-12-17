@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quas dolore saepe expedita libero eveniet alias beatae unde hic earum magnam, officia eaque quod, vero deserunt iusto corrupti exercitationem suscipit.</p>
+
+    <ul> <!-- O name é usado aqui para carregar a pag dentro do iframe -->
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segundo página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestiae accusantium quas totam enim ipsa suscipit in. Labore repellat facilis vero et en    im? Ipsum sint at ut nesciunt fugit. Voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorum velit excepturi voluptate, omnis laudantium est aut laboriosam ut beatae cupiditate qui accusamus praesentium vero dolore voluptatibus aliquam expedita. Sit.</p>
+                
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, praesentium, ea dolor harum repellendus sapiente deserunt saepe molestiae dignissimos sunt laboriosam dolores accusantium exercitationem quaerat, quas eligendi nostrum ratione pariatur.</p> <img src='imagens/cursoemvideo.png'> ">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore numquam nemo. Voluptate voluptates autem dolor ex minima. Ducimus, quibusdam atque saepe soluta ullam ipsam magnam cum commodi temporibus perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quo suscipit magni nobis in laborum delectus quod dignissimos impedit repellendus assumenda at, eligendi, nihil hic! Illum distinctio repudiandae possimus quos?</p>
+</body>
+</html>
