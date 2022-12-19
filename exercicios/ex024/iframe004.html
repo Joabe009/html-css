@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quasi ipsa, laudantium quibusdam nostrum labore totam dicta, dignissimos doloremque unde laborum id illum quidem aspernatur aut libero repellendus, suscipit consequuntur.</p>
+                                    <!-- sandbox => bloqueia todo tipo de acesso da pag dentro do iframe
+                                    allow-same-origin => permite conteudo da mesma origem (mesmo servidor)
+                                    allow-forms => permite conteudo de formulários
+                                    allow-scripts => permite conteudo de scripts
+
+                                    -->
+
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-forms allow-scripts"
+    referrerpolicy="no-referrer">
+            <!-- no-referrer => conteudo do iframe não coleta nenhum tipo de informação do usuário-->
+    <!-- padrão => no-referer-when-donwgrade <= padrão -->
+        Seu navegador não é compatível com isso...
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos illo error dolorum omnis earum ipsam maxime. Dolorem facere officiis consequatur atque non quae repellat provident delectus quia! Aut, in?</p>
+</body>
+</html>
